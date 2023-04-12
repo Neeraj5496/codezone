@@ -1,0 +1,53 @@
+<p>The ER model defines the conceptual view of a database. It works around real-world entities and the associations among them. At view level, the ER model is considered a good option for designing databases.</p>
+<h2>Entity</h2>
+<p>An entity can be a real-world object, either animate or inanimate, that can be easily identifiable. For example, in a school database, students, teachers, classes, and courses offered can be considered as entities. All these entities have some attributes or properties that give them their identity.</p>
+<p>An entity set is a collection of similar types of entities. An entity set may contain entities with attribute sharing similar values. For example, a Students set may contain all the students of a school; likewise a Teachers set may contain all the teachers of a school from all faculties. Entity sets need not be disjoint.</p>
+<h2>Attributes</h2>
+<p>Entities are represented by means of their properties, called <b>attributes</b>. All attributes have values. For example, a student entity may have name, class, and age as attributes.</p>
+<p>There exists a domain or range of values that can be assigned to attributes. For example, a student's name cannot be a numeric value. It has to be alphabetic. A student's age cannot be negative, etc.</p>
+<h3>Types of Attributes</h3>
+<ul class="list">
+<li><p><b>Simple attribute</b> &minus; Simple attributes are atomic values, which cannot be divided further. For example, a student's phone number is an atomic value of 10 digits.</p></li>
+<li><p><b>Composite attribute</b> &minus; Composite attributes are made of more than one simple attribute. For example, a student's complete name may have first_name and last_name.</p></li>
+<li><p><b>Derived attribute</b> &minus; Derived attributes are the attributes that do not exist in the physical database, but their values are derived from other attributes present in the database. For example, average_salary in a department should not be saved directly in the database, instead it can be derived. For another example, age can be derived from data_of_birth.</p></li>
+<li><p><b>Single-value attribute</b> &minus; Single-value attributes contain single value. For example &minus; Social_Security_Number.</p></li>
+<li><p><b>Multi-value attribute</b> &minus; Multi-value attributes may contain more than one values. For example, a person can have more than one phone number, email_address, etc.</p></li>
+</ul>
+<p>These attribute types can come together in a way like &minus;</p>
+<ul class="list">
+<li>simple single-valued attributes</li>
+<li>simple multi-valued attributes</li>
+<li>composite single-valued attributes</li>
+<li>composite multi-valued attributes</li>
+</ul>
+<h3>Entity-Set and Keys</h3>
+<p>Key is an attribute or collection of attributes that uniquely identifies an entity among entity set.</p>
+<p>For example, the roll_number of a student makes him/her identifiable among students.</p>
+<ul class="list">
+<li><p><b>Super Key</b> &minus; A set of attributes (one or more) that collectively identifies an entity in an entity set.</p></li>
+<li><p><b>Candidate Key</b> &minus; A minimal super key is called a candidate key. An entity set may have more than one candidate key.</p></li>
+<li><p><b>Primary Key</b> &minus; A primary key is one of the candidate keys chosen by the database designer to uniquely identify the entity set.</p></li>
+</ul>
+<h2>Relationship</h2>
+<p>The association among entities is called a relationship. For example, an employee <b>works_at</b> a department, a student <b>enrolls</b> in a course. Here, Works_at and Enrolls are called relationships.</p>
+<h3>Relationship Set</h3>
+<p>A set of relationships of similar type is called a relationship set. Like entities, a relationship too can have attributes. These attributes are called <b>descriptive attributes</b>.</p>
+<h3>Degree of Relationship</h3>
+<p>The number of participating entities in a relationship defines the degree of the relationship.</p>
+<ul class="list">
+<li>Binary = degree 2</li>
+<li>Ternary = degree 3</li>
+<li>n-ary = degree</li>
+</ul>
+<h3>Mapping Cardinalities</h3>
+<p><b>Cardinality</b> defines the number of entities in one entity set, which can be associated with the number of entities of other set via relationship set.</p>
+<ul class="list">
+<li><p><b>One-to-one</b> &minus; One entity from entity set A can be associated with at most one entity of entity set B and vice versa.</p></li>
+<img src="/one_to_one_relation.png" alt="One-to-one relation" />
+<li><p><b>One-to-many</b> &minus; One entity from entity set A can be associated with more than one entities of entity set B however an entity from entity set B, can be associated with at most one entity.</p></li>
+<img src="/one_to_many_relation.png" alt="One-to-many relation" />
+<li><p><b>Many-to-one</b> &minus; More than one entities from entity set A can be associated with at most one entity of entity set B, however an entity from entity set B can be associated with more than one entity from entity set A.</p></li>
+<img src="/many_to_one_relation.png" alt="Many-to-one relation" />
+<li><p><b>Many-to-many</b> &minus; One entity from A can be associated with more than one entity from B and vice versa.</p></li>
+<img src="/many_to_many_relation.png" alt="Many-to-many relation" />
+</ul>

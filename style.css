@@ -1,0 +1,156 @@
+/* *{
+    margin: 0%;
+    padding: 0%;
+} */
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+}
+.sidebar{
+    background-color: rgb(206, 204, 204) ;
+
+    width: 500px;
+    height: 1250px;
+}
+.sidebar nav{
+    padding: 0px;
+}
+.sidebar nav li{
+    list-style: none;
+    padding: 25px;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
+}
+.sidebar nav ul ul{
+    background-color: rgb(178, 180, 180);
+}
+.main{
+    background-color: rgb(206, 204, 204) ;
+    width: 100pc
+}
+.container{
+    display:flex;
+}
+.infocontainer{
+    background-color: rgb(206, 204, 204) ;
+    height: 45vh;
+    width: 80vw;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.divinfo{
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+
+}
+.divinfo1{
+    display: flex;
+    justify-content:center;
+    flex-direction:column;
+
+}
+.pic img{
+    height: 45vh;
+    width: 500px;
+    border-radius: 25px;
+}
+
+.name{
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+.contentcontainer{
+    background-color: rgb(206, 204, 204) ;
+    height: 45vh;
+    width: 80vw;
+    margin: 72px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.infocontainer1{
+    background-color: rgb(206, 204, 204) ;
+    height: 45vh;
+    width: 80vw;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.Copyright{
+    background-color: rgb(178, 180, 180);
+    height: 10vh;
+    width: 80vw;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.Copyright div{
+    font-size: 20px;
+    font-weight: bold;
+}
+.Copyright1 {
+    background-color: rgb(178, 180, 180);
+    height: 10vh;
+    width: 114vw;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around
+}
+
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 1% 5%;
+    background-color: aqua;
+}
+header.uppernav {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 8px;
+    background-color: rgb(191, 189, 189);
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+a.webname {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.primary-color {
+    color: rgb(184, 123, 191);
+}
+header.uppernav ul{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-weight: 600;
+}
+header.uppernav nav {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-weight: 600;
+}
+header.uppernav a {
+    color: rgb(17, 17, 17);
+}
+nav a {
+    padding: 1% 2%;
+    margin: 0px 2%;
+}

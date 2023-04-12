@@ -1,0 +1,30 @@
+<h1 class="qa_title">What are the DML commands in DBMS?</h1>
+<hr/>
+<div id="adp_top_ads" style="text-align:center !important;"></div>
+<script>
+     var adPos = document.getElementById('adp_top_ads');
+     var ad_id_720 = "8014640d-fd34-4b2e-9b1b-cc67234a2325";
+     var ad_id_650 = "2d1bb2c4-eb72-471d-9c80-1bf5514728c1";
+     var ad_id_300 = "df94a1a9-ae2f-432d-9a92-d93823ff4503";
+     var width = window.innerWidth;
+     var ad_id = ad_id_720;
+     if( width <= 768 ){
+        ad_id =  ad_id_300;
+     }else if( width <= 1435 ){
+        ad_id =  ad_id_650;
+     }
+     adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+     var adpushup = adpushup || {};
+     adpushup.que = adpushup.que || [];
+     adpushup.que.push(function() {
+     adpushup.triggerAd(ad_id);
+     });
+</script>
+</div>
+<hr/>
+<div id="divResources">
+</div>
+<div id="downloadContent">
+<p>The structured query language (SQL) commands deal with the manipulation of data present in the database that belongs to the DML or Data Manipulation Language. This includes most of the SQL statements.</p><h2>Examples of DML</h2><p>The examples of DML in the Database Management System (DBMS) are as follows &minus;</p><ul class="list"><li><p>SELECT &minus; Retrieve data from the database.</p></li><li><p>INSERT &minus; Insert data into a table.</p></li><li><p>UPDATE &minus; Update existing data within a table.</p></li><li><p>DELETE &minus; Delete records from a database table.</p></li></ul><h2>Syntax for DML Commands</h2><p>The syntax for the DML commands are as follows &minus;</p><h3>INSERT</h3><p>Insert command is used to insert data into a table.</p><p>The syntax for insert command is as follows &minus;</p><p><strong>Syntax</strong></p><pre class="result notranslate">Insert into &lt;table_name&gt; (column list) values (column values);</pre><p>For example, if we want to insert multiple rows to the Employee table, we can use the following command &minus;</p><p><strong>Example</strong></p><pre class="result notranslate">Insert into Employee(Emp_id, Emp_name) values (001, &ldquo; bhanu&rdquo;);
+Insert into Employee(Emp_id, Emp_name) values (002, &ldquo; hari&rdquo;);
+Insert into Employee(Emp_id, Emp_name) values (003, &ldquo; bob&rdquo;);</pre><h3>SELECT</h3><p>Select command is used to retrieve data from the database.</p><p>The syntax for the select command is as follows &minus;</p><p><strong>Syntax</strong></p><pre class="result notranslate">SELECT * from &lt;table_name&gt;;</pre><p>For example, if we want to select all rows from the Employee database, we can use the following command &minus;</p><p><strong>Example</strong></p><pre class="result notranslate">SELECT * from Employee;</pre><h3>DELETE</h3><p>Delete command is used to delete records from a database table.</p><p>The syntax for the delete command is as follows -</p><p><strong>Syntax</strong></p><pre class="result notranslate">&nbsp;Delete from &lt;table_name&gt;WHERE condition;</pre><p>For example, if we want to delete an entire row of employee id 002, we can use the following command &minus;</p><p><strong>Example</strong></p><pre class="result notranslate">DELETE from Employee WHERE Emp_id=002;</pre><h3>UPDATE</h3><p>Update command is used to update existing data within a table.</p><p>The syntax for the update command is as follows -</p><p><strong>Syntax</strong></p><pre class="result notranslate">UPDATE &lt;table_name&gt; SET column_number =value_number WHERE condition;</pre><p>For example, if we want to update the name of the employee having the employee id 001, we can use the command given below &minus;</p><p><strong>Example</strong></p><pre class="result notranslate">UPDATE Employee SET Emp_name= Ram WHERE Emp_id= 001;</pre></div>

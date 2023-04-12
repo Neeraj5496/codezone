@@ -1,0 +1,30 @@
+<h1 class="qa_title">What are the DCL commands in DBMS?</h1>
+<div class="qa_category">
+
+<hr/>
+<div id="adp_top_ads" style="text-align:center !important;"></div>
+<script>
+     var adPos = document.getElementById('adp_top_ads');
+     var ad_id_720 = "8014640d-fd34-4b2e-9b1b-cc67234a2325";
+     var ad_id_650 = "2d1bb2c4-eb72-471d-9c80-1bf5514728c1";
+     var ad_id_300 = "df94a1a9-ae2f-432d-9a92-d93823ff4503";
+     var width = window.innerWidth;
+     var ad_id = ad_id_720;
+     if( width <= 768 ){
+        ad_id =  ad_id_300;
+     }else if( width <= 1435 ){
+        ad_id =  ad_id_650;
+     }
+     adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+     var adpushup = adpushup || {};
+     adpushup.que = adpushup.que || [];
+     adpushup.que.push(function() {
+     adpushup.triggerAd(ad_id);
+     });
+</script>
+</div>
+<hr/>
+<div id="divResources">
+</div>
+<div id="downloadContent">
+<p>Data control language (DCL) is used to access the stored data. It is mainly used for revoke and to grant the user the required access to a database. In the database, this language does not have the feature of rollback.</p><ul class="list"><li><p>It is a part of the structured query language (SQL).</p></li><li><p>It helps in controlling access to information stored in a database. It complements the data manipulation language (DML) and the data definition language (DDL).</p></li><li><p>It is the simplest among three commands.</p></li><li><p>It provides the administrators, to remove and set database permissions to desired users as needed.</p></li><li><p>These commands are employed to grant, remove and deny permissions to users for retrieving and manipulating a database.</p></li></ul><h2>DDL Commands</h2><p>The Data Definition Language (DDL) commands are as follows &minus;</p><h3>GRANT Command</h3><p>It is employed to grant a privilege to a user. GRANT command allows specified users to perform specified tasks</p><p><strong>Syntax</strong></p><pre class="result notranslate">GRANT privilege_name on objectname to user;</pre><p>Here,</p><ul class="list"><li><p>privilege names are SELECT,UPDATE,DELETE,INSERT,ALTER,ALL</p></li><li><p>objectname is table name</p></li><li><p>user is the name of the user to whom we grant privileges</p></li></ul><h3>REVOKE Command</h3><p>It is employed to remove a privilege from a user. REVOKE helps the owner to cancel previously granted permissions.</p><p><strong>Syntax</strong></p><pre class="result notranslate">&nbsp;REVOKE privilege_name on objectname from user;</pre><p>Here,</p><ul class="list"><li><p>privilege names are SELECT,UPDATE,DELETE,INSERT,ALTER,ALL</p></li><li><p>objectname is table name</p></li><li><p>user is the name of the user whose privileges are removing</p></li></ul><h3>Example</h3><pre class="result notranslate">GRANT SELECT, UPDATE ON employees TO Bhanu</pre><p>Explanation &minus; Firstly, to give the permissions to user, we have to use GRANT command. The privileges are SELECT because to view the records and UPDATE to modify the records. The objectname is table name which is Employee. The user name is bhanu.</p><pre class="result notranslate">REVOKE SELECT, UPDATE ON employees TO Bhanu</pre><p>Explanation &minus; Firstly, to revoke the permissions to user, we have to use REVOKE command. The privileges Need to revoke are SELECT because to view the records and UPDATE to modify the records. The objectname is table name which is Employee. The user name is Bhanu.</p></div>
